@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {toggleTodo} from "../redux/actions";
 import {deleteTodo} from "../redux/actions";
 
-const TodoAppListItem = ({content, id, completed, toggleTodo}) => {
+const TodoAppListItem = ({content, id, completed, toggleTodo,deleteTodo}) => {
     return (
         <div key={id} style={{
             textDecoration: completed ? "line-through" : "initial"
